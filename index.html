@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="control-buttons">
+        <span>Start Game</span>
+    </div>
+
+    <div class="info-container">
+        <div class="name">Hello: <span></span></div>
+        <div class="tries">Wrong Tries: <span>0</span></div>
+    </div>
+
+    <div class="memory-game-blocks">
+        <div class="game-block" data-images="baby">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/baby.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-images="baby">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/baby.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-images="ballon">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/ballon.png" alt="">
+            </div>
+        </div>
+        <div class="game-block " data-images="ballon">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/ballon.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-images="boy">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/boy.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-images="boy">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/boy.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-images="cat">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/cat.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-images="cat">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/cat.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-images="jerry">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/jerry.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-images="jerry">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/jerry.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-images="koala">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/koala.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-images="koala">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/koala.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-images="panda">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/panda.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-images="panda">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/panda.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-images="rabbit">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/rabbit.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-images="rabbit">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/rabbit.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-images="spongebob">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/spongebob.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-images="spongebob">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/spongebob.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-images="tweety">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/tweety.png" alt="">
+            </div>
+        </div>
+        <div class="game-block" data-images="tweety">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/tweety.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <audio id="fail" src="audio/fail.mp3" preload="auto"></audio>
+    <audio id="success" src="audio/success.mp3" preload="auto"></audio>
+
+    <script src="main.js"></script>
+</body>
+</html>

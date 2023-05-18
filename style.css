@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Tahoma, sans-serif;
+  margin: 0;
+}
+/* START CONTROL-BUTTONS */
+.control-buttons {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(3, 169, 244, 0.9);
+  z-index: 2;
+}
+.control-buttons span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  color: #fff;
+  background-color: #f44336;
+  padding: 15px 25px;
+  font-size: 30px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+}
+/* END CONTROL-BUTTONS */
+
+/* START INFO-CONTAINER */
+.info-container {
+  width: 1080px;
+  margin: 10px auto 0;
+  background-color: #f6f6f6;
+  padding: 15px;
+  font-size: 24px;
+  border: 5px solid #2196f3;
+  overflow: hidden;
+  user-select: none;
+}
+
+.info-container .name {
+  float: left;
+  width: 50%;
+}
+.info-container .tries {
+  float: right;
+  width: 50%;
+  text-align: right;
+}
+/* END INFO-CONTAINER */
+
+/* START MEMORY-GAME-BLOCKS */
+.memory-game-blocks {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: 10px auto;
+}
+.memory-game-blocks.no-clicking {
+  pointer-events: none;
+}
+.memory-game-blocks .game-block {
+  height: 200px;
+  flex: 1 0 200px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -ms-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+  cursor: pointer;
+  position: relative;
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border: 5px solid #2196f3;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.front {
+  line-height: 200px;
+  background-color: #333;
+}
+.front::before {
+  content: "!";
+  color: #fff;
+  font-size: 140px;
+  font-weight: bold;
+}
+.back {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  background-color: #607d8b;
+}
+.back img {
+  width: 195px;
+  height: 180px;
+  margin-top: 6px;
+}
+.game-block.is-flipped,
+.game-block.has-matched {
+  pointer-events: none;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+/* END MEMORY-GAME-BLOCKS */
